@@ -189,3 +189,15 @@ main p {
 .btn:hover {
   opacity: 0.85;
 }
+.dark-mode {
+  background-color: #0f172a;
+  color: white;
+}
+
+.dark-mode .hero h1 {
+  color: white;
+}
+
+.dark-mode .hero p {
+  color: #d1d5db;
+}
