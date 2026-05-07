@@ -101,3 +101,37 @@ main p {
   font-size: 18px;
   color: #555;
 }
+.dropdown-menu.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 18px 20px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    background-color: #111827;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    margin-top: 10px;
+  }
+}
