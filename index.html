@@ -14,17 +14,17 @@
     <button id="hamburgerBtn" class="hamburger">☰</button>
 
     <ul id="navMenu" class="nav-menu">
-      <li><a href="#" class="nav-link active">Home</a></li>
-      <li><a href="#" class="nav-link">Activities</a></li>
-      <li><a href="#" class="nav-link">My List</a></li>
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#activities" class="nav-link">Activities</a></li>
+      <li><a href="#my-list" class="nav-link">My List</a></li>
 
       <li class="dropdown">
         <button id="dropdownBtn" class="dropdown-btn">More ▼</button>
 
         <ul id="dropdownMenu" class="dropdown-menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#help">Help</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </li>
     </ul>
@@ -32,7 +32,7 @@
 </header>
 
 <main>
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-content">
       <h1 id="mainTitle">Hoop Activity Planner</h1>
 
@@ -46,7 +46,7 @@
       </div>
     </div>
   </section>
-  <section class="planner-section">
+  <section id="my-list" class="planner-section">
   <h2>My Training List</h2>
 
   <div class="input-box">
@@ -58,7 +58,7 @@
 
   <ul id="activityList" class="activity-list"></ul>
 </section>
-<section class="cards-section">
+<section id="activities" class="cards-section">
   <h2>Choose a Training Activity</h2>
 <input
   type="text"
@@ -99,6 +99,88 @@
       </button>
     </div>
   </div>
+</section>
+<section id="about" class="info-section about-section">
+  <h2>About This Project</h2>
+
+  <div class="info-content">
+    <p>
+      Hoop Activity Planner is an interactive basketball training webpage created for a DOM manipulation assignment.
+      The project helps users plan their basketball activities, add custom activities, remove activities, search through training cards,
+      and switch between light and dark mode.
+    </p>
+
+    <div class="info-cards">
+      <div class="info-card">
+        <h3>Project Purpose</h3>
+        <p>
+          The purpose of this project is to show how JavaScript can use the DOM to make a webpage interactive.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>Basketball Focus</h3>
+        <p>
+          The page is based on basketball training activities such as shooting, fitness, ball handling, and teamwork.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>DOM Features</h3>
+        <p>
+          The project uses buttons, input fields, search filters, list creation, dark mode, and menu interactions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="help" class="info-section help-section">
+  <h2>How To Use This Page</h2>
+
+  <div class="help-container">
+    <div class="help-step">
+      <h3>1. Add Your Own Activity</h3>
+      <p>
+        Type a basketball activity in the input field and click Add Activity. It will appear in your training list.
+      </p>
+    </div>
+
+    <div class="help-step">
+      <h3>2. Choose From Cards</h3>
+      <p>
+        You can also click the Add Activity button on any training card to add that activity to your list.
+      </p>
+    </div>
+
+    <div class="help-step">
+      <h3>3. Remove Activities</h3>
+      <p>
+        Click any activity in your training list to remove it from the page.
+      </p>
+    </div>
+
+    <div class="help-step">
+      <h3>4. Search Activities</h3>
+      <p>
+        Use the search box to quickly filter the activity cards and find the training activity you want.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+  <p class="contact-intro">
+    Have a question about the project or want to connect? Fill in the form below.
+  </p>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your name" />
+    <input type="email" placeholder="Your email" />
+    <textarea placeholder="Your message"></textarea>
+    <button type="button" class="btn primary-btn">Send Message</button>
+  </form>
 </section>
 </main>
 <footer class="footer">
