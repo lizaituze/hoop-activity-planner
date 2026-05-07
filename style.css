@@ -135,3 +135,57 @@ main p {
     margin-top: 10px;
   }
 }
+.hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: #f97316;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: #111827;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
