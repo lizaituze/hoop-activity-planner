@@ -28,3 +28,25 @@ themeBtn.addEventListener("click", function () {
     themeBtn.textContent = "Dark Mode";
   }
 });
+const activityInput = document.getElementById("activityInput");
+const addActivityBtn = document.getElementById("addActivityBtn");
+const activityList = document.getElementById("activityList");
+
+addActivityBtn.addEventListener("click", function () {
+  const activityText = activityInput.value.trim();
+
+  if (activityText === "") {
+    alert("Please enter an activity first.");
+    return;
+  }
+
+  const newActivity = document.createElement("li");
+  newActivity.textContent = activityText;
+
+  newActivity.addEventListener("click", function () {
+    newActivity.remove();
+  });
+
+  activityList.appendChild(newActivity);
+  activityInput.value = "";
+});
