@@ -66,3 +66,20 @@ cardButtons.forEach(function (button) {
     activityList.appendChild(newActivity);
   });
 });
+const searchInput = document.getElementById("searchInput");
+const activityCards = document.querySelectorAll(".activity-card");
+
+searchInput.addEventListener("input", function () {
+  const searchText = searchInput.value.toLowerCase();
+
+  activityCards.forEach(function (card) {
+    const cardTitle = card.querySelector("h3").textContent.toLowerCase();
+    const cardDescription = card.querySelector("p").textContent.toLowerCase();
+
+    if (cardTitle.includes(searchText) || cardDescription.includes(searchText)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
