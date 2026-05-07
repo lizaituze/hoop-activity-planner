@@ -361,3 +361,18 @@ main p {
 .dark-mode .search-input::placeholder {
   color: #d1d5db;
 }
+.footer {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.footer p {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.footer p:last-child {
+  margin-bottom: 0;
+}
