@@ -342,3 +342,22 @@ main p {
     grid-template-columns: 1fr;
   }
 }
+.search-input {
+  width: 350px;
+  max-width: 100%;
+  padding: 12px;
+  margin-bottom: 30px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.dark-mode .search-input {
+  background-color: #1f2937;
+  color: white;
+  border-color: #374151;
+}
+
+.dark-mode .search-input::placeholder {
+  color: #d1d5db;
+}
