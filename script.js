@@ -50,3 +50,19 @@ addActivityBtn.addEventListener("click", function () {
   activityList.appendChild(newActivity);
   activityInput.value = "";
 });
+const cardButtons = document.querySelectorAll(".card-btn");
+
+cardButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    const selectedActivity = button.getAttribute("data-activity");
+
+    const newActivity = document.createElement("li");
+    newActivity.textContent = selectedActivity;
+
+    newActivity.addEventListener("click", function () {
+      newActivity.remove();
+    });
+
+    activityList.appendChild(newActivity);
+  });
+});
