@@ -90,7 +90,6 @@ body {
 }
 
 main {
-  padding: 60px 20px;
   text-align: center;
 }
 
@@ -138,12 +137,18 @@ main p {
   }
 }
 .hero {
-  min-height: 80vh;
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 60px 20px;
+  background-image: linear-gradient(rgba(255, 247, 237, 0.65), rgba(255, 247, 237, 0.65)),
+    url("./images/basketball-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -191,11 +196,9 @@ main p {
 .btn:hover {
   opacity: 0.85;
 }
-.dark-mode {
-  background-color: #0f172a;
-  color: white;
+.dark-mode .hero {
+  background: linear-gradient(135deg, #0f172a, #1f2937);
 }
-
 .dark-mode .hero h1 {
   color: white;
 }
@@ -533,4 +536,95 @@ main p {
   .contact-section h2 {
     font-size: 32px;
   }
+}
+.dark-mode {
+  background-color: #0f172a;
+  color: white;
+}
+
+.dark-mode .hero {
+  background: linear-gradient(135deg, #0f172a, #1f2937);
+}
+
+.dark-mode .planner-section {
+  background-color: #111827;
+}
+
+.dark-mode .cards-section {
+  background-color: #0f172a;
+}
+
+.dark-mode .about-section {
+  background-color: #111827;
+}
+
+.dark-mode .help-section {
+  background-color: #0f172a;
+}
+
+.dark-mode .contact-section {
+  background-color: #111827;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+  color: white;
+}
+
+.dark-mode p,
+.dark-mode .small-text,
+.dark-mode .contact-intro {
+  color: #d1d5db;
+}
+
+.dark-mode .activity-card,
+.dark-mode .info-card,
+.dark-mode .help-step {
+  background-color: #1f2937;
+}
+
+.dark-mode .activity-card p,
+.dark-mode .info-card p,
+.dark-mode .help-step p {
+  color: #d1d5db;
+}
+
+.dark-mode .activity-list li {
+  background-color: #1f2937;
+  color: white;
+}
+
+.dark-mode .activity-list li:hover {
+  background-color: #f97316;
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #1f2937;
+  color: white;
+  border-color: #374151;
+}
+.dark-mode .hero {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
+    url("Images/basketball.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+  color: #d1d5db;
+}
+.dark-mode .hero {
+  background-image: linear-gradient(
+      rgba(15, 23, 42, 0.78),
+      rgba(15, 23, 42, 0.78)
+    ),
+    url("./images/basketball-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
