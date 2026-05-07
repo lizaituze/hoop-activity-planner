@@ -201,3 +201,73 @@ main p {
 .dark-mode .hero p {
   color: #d1d5db;
 }
+.planner-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.planner-section h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #111827;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.input-box input {
+  width: 300px;
+  max-width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.small-text {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.activity-list {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.activity-list li {
+  background-color: #f3f4f6;
+  margin-bottom: 10px;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.activity-list li:hover {
+  background-color: #f97316;
+  color: white;
+}
+
+.dark-mode .planner-section {
+  background-color: #111827;
+}
+
+.dark-mode .planner-section h2 {
+  color: white;
+}
+
+.dark-mode .small-text {
+  color: #d1d5db;
+}
+
+.dark-mode .activity-list li {
+  background-color: #1f2937;
+  color: white;
+}
